@@ -26,7 +26,7 @@ export default (state = seedData, action) => {
         return newState;
     } else if (action.type === 'clearInventory') {
         let newState = [...state];
-        newState.forEact((item, i) => {
+        newState.forEach((item, i) => {
             item.quantity = 0;
         })
         return newState;
